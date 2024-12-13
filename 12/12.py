@@ -90,7 +90,7 @@ def get_continuous_edges(grouped_edges):
     return total_edges
 
 
-grid = [list(line.strip()) for line in open("adventofcode2024/12/test12.txt", 'r').readlines()]
+grid = [list(line.strip()) for line in open("adventofcode2024/12/12.txt", 'r').readlines()]
 regions = find_regions(grid)
 total_price = sum(len(region) * calculate_edges(grid, region) for region in regions)
 
